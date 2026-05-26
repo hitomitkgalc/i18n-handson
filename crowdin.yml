@@ -1,0 +1,3 @@
+files:
+  - source: /en.yaml
+    translation: /%two_letters_code%.yaml

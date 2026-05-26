@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitomi Takagi — i18n Practice</title>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    /* ── Header ── */
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+    .site-name { font-weight: 700; font-size: 1rem; letter-spacing: 0.02em; }
+
+    .lang-switcher { display: flex; gap: 0.4rem; }
+    .lang-switcher button {
+      padding: 0.3rem 0.9rem;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 0.82rem;
+      color: #6b7280;
+      transition: all 0.15s;
+    }
+    .lang-switcher button.active {
+      background: #1a1a1a;
+      color: #fff;
+      border-color: #1a1a1a;
+    }
+
+    /* ── Fallback notice ── */
+    #fallback-notice {
+      display: none;
+      background: #fef3c7;
+      border-bottom: 1px solid #fcd34d;
+      padding: 0.6rem 2rem;
+      font-size: 0.82rem;
+      color: #92400e;
+      text-align: center;
+    }
+    #fallback-notice.visible { display: block; }
+
+    /* ── Sections ── */
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+
+    /* ── Hero ── */
+    #hero { padding-top: 6rem; }
+    #hero h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    #hero p {
+      font-size: 1rem;
+      color: #4b5563;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.75rem;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* ── Expertise ── */
+    #expertise { border-top: 1px solid #e5e7eb; }
+    #expertise h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .card p {
+      font-size: 0.88rem;
+      color: #4b5563;
+      line-height: 1.7;
+    }
+
+    /* ── Contact ── */
+    #contact {
+      border-top: 1px solid #e5e7eb;
+      text-align: center;
+    }
+    #contact h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 2rem;
+      white-space: pre-line;
+    }
+    #contact .footnote {
+      margin-top: 1.25rem;
+      font-size: 0.82rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="site-name">Hitomi Takagi</span>
+    <div class="lang-switcher">
+      <button id="btn-en" onclick="switchLang('en')">EN</button>
+      <button id="btn-ja" onclick="switchLang('ja')">JA</button>
+    </div>
+  </header>
+
+  <div id="fallback-notice">
+    ja.yaml が見つかりません — 英語にフォールバックしています。TMS でプッシュバック後に切り替わります。
+  </div>
+
+  <section id="hero">
+    <h1>Hitomi Takagi</h1>
+    <p data-i18n="hero.body"></p>
+    <a class="btn" href="#contact" data-i18n="hero.cta"></a>
+  </section>
+
+  <section id="expertise">
+    <h2 data-i18n="expertise.heading"></h2>
+    <div class="cards">
+      <div class="card">
+        <h3 data-i18n="expertise.card.saas.title"></h3>
+        <p data-i18n="expertise.card.saas.body"></p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="expertise.card.transcreation.title"></h3>
+        <p data-i18n="expertise.card.transcreation.body"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 data-i18n="contact.heading"></h2>
+    <a class="btn" href="#" data-i18n="contact.cta"></a>
+    <p class="footnote" data-i18n="contact.footnote"></p>
+  </section>
+
+  <script>
+    async function loadStrings(lang) {
+      try {
+        const res = await fetch(`./${lang}.yaml`);
+        if (!res.ok) throw new Error('not found');
+        const text = await res.text();
+        return { strings: jsyaml.load(text), usedFallback: false };
+      } catch {
+        if (lang === 'en') return { strings: {}, usedFallback: false };
+        // Fallback to English when target-language YAML is missing
+        const res = await fetch('./en.yaml');
+        const text = await res.text();
+        return { strings: jsyaml.load(text), usedFallback: true };
+      }
+    }
+
+    function applyStrings(strings) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (strings[key] !== undefined) el.textContent = strings[key];
+      });
+    }
+
+    async function switchLang(lang) {
+      const { strings, usedFallback } = await loadStrings(lang);
+      applyStrings(strings);
+
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+      document.getElementById('fallback-notice').classList.toggle('visible', usedFallback);
+      document.documentElement.lang = usedFallback ? 'en' : lang;
+    }
+
+    switchLang('en');
+  </script>
+
+</body>
+</html>

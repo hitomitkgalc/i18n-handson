@@ -1,0 +1,134 @@
+# English strings — split from strings.yaml
+# Source: hitomitkgalc.github.io portfolio
+
+nav.link.about: About
+nav.link.expertise: Expertise
+nav.link.cases: Cases
+nav.link.methodology: Methodology
+nav.link.contact: Contact
+nav.cta: "Let's Talk"
+hero.body: UI Localization Specialist at HubSpot Japan with a sales and CS background. I turn cultural and market insight into measurable product outcomes — from +51% CVR uplift to 5% revenue growth.
+hero.cta: View Case Studies →
+expertise.heading: Expertise
+expertise.heading.full: |
+  Three Core
+  Capabilities
+expertise.card.saas.title: SaaS UI/UX Localization
+expertise.card.saas.body: UI string translation, terminology management, in-app QA testing. Product-quality Japanese localization that accounts for character limits, context, and user flows.
+expertise.card.transcreation.title: Marketing Transcreation
+expertise.card.transcreation.body: Adapting brand voice and marketing copy for Japanese audiences — with cultural depth and search visibility in mind. From tagline transcreation to SEO/AEO-optimized meta content, grounded in Japanese search behavior and user psychology.
+expertise.card.lqa.title: AI-Powered Localization Workflow
+expertise.card.lqa.body: Building scalable localization workflows powered by LLM prompts and QA automation. From Style Guide-trained MT output to structured error categorization — reducing post-edit effort without sacrificing nuance.
+cases.heading: Localization that moved the needle
+cases.nav.label: Case studies
+cases.detail.expand: Detail ↓
+cases.detail.collapse: Collapse ↑
+cases.metric.cvr_free: |
+  Free→Starter
+  conversion
+cases.metric.cvr_signup: Signup CVR
+cases.metric.revenue: |
+  Revenue uplift
+  (consumables)
+cases.metric.error_rate: |
+  Error rate
+  (vs 30–40% EU)
+cases.insight.sales: Sales × CS insight
+cases.insight.cultural: Cultural insight
+cases.hubspot.company: HubSpot Japan
+cases.hubspot.period: Aug 2024 – Present
+cases.hubspot.tag: Localization × UX Research
+cases.hubspot.title: "SignUp CVR uplift: +51% via localization-driven A/B test"
+cases.hubspot.detail: "Analyzed Japan signup CVR gap— JA 16% vs EN 25% — from a localization lens. Proposed optional-field callouts and pre-form overlay. North Star metric improved 51% (statistically significant). Also flagged downstream lead qualification risk — a structural trade-off only visible through combined localization + sales expertise."
+cases.amazon.company: Amazon Japan
+cases.amazon.period: Feb 2021 – May 2023
+cases.amazon.tag: Localization × ML Training Data
+cases.amazon.title: "150% faster, 5% more revenue: Amazon Japan ML model localization"
+cases.amazon.detail: "ATRIA project: localized AI catalog classification for Japan. Audited English substitutability logic across all categories. Fed Japan-specific standards to EU data scientists. Achieved 15% error rate vs 30–40% in EU. Awarded Most Valuable Contribution Q3 2022."
+methodology.label: Methodology
+methodology.heading: |
+  AI × Human Localization
+  Quality Framework
+methodology.sub: My strength lies not just in translation, but in designing and ensuring quality. I help teams select the right workflow and build QA standards tailored to their project conditions.
+methodology.tab.ai_workflow.label: AI Workflow 4 Patterns
+methodology.tab.mqm_dqf.label: MQM-DQF Quality Framework
+methodology.tab.ai_delegation.label: AI Delegation
+methodology.process.mt: Machine Translation
+methodology.process.ai_review: AI Review
+methodology.process.post_edit: Human Post Edit
+methodology.process.human_trans: Human Translation
+methodology.tab.ai_workflow.pattern.1.title: CAT + MT + AIR + PE — Balanced
+methodology.tab.ai_workflow.pattern.1.tag: Balanced
+methodology.tab.ai_workflow.pattern.1.desc: "High-TM-match segments handled by CAT; the rest flows to MT+AI Review. Maximizes TM assets while balancing cost, quality, and speed."
+methodology.tab.ai_workflow.pattern.1.case.1: Strong translation memory (TM) exists
+methodology.tab.ai_workflow.pattern.1.case.2: Ongoing or repetitive content
+methodology.tab.ai_workflow.pattern.1.case.3: "Need balance of cost, quality, and speed"
+methodology.tab.ai_workflow.pattern.2.title: MT + AIR + PE — Speed-First
+methodology.tab.ai_workflow.pattern.2.tag: Speed
+methodology.tab.ai_workflow.pattern.2.desc: "Faster without TM. MT+LC pre-scans for errors; humans focus only on flagged segments, minimizing PE effort."
+methodology.tab.ai_workflow.pattern.2.case.1: Low TM / new project
+methodology.tab.ai_workflow.pattern.2.case.2: Tight deadlines or high volume
+methodology.tab.ai_workflow.pattern.2.case.3: "Marketing content, blog articles"
+methodology.tab.ai_workflow.pattern.3.title: MT + PE + AIR — Safety Net
+methodology.tab.ai_workflow.pattern.3.tag: Quality Assurance
+methodology.tab.ai_workflow.pattern.3.desc: LC acts as a final safety net after human PE, catching fatigue-related errors that humans miss.
+methodology.tab.ai_workflow.pattern.3.case.1: Human-led but want AI final check
+methodology.tab.ai_workflow.pattern.3.case.2: Long or repetitive projects prone to fatigue
+methodology.tab.ai_workflow.pattern.3.case.3: "UI strings, product documentation"
+methodology.tab.ai_workflow.pattern.4.title: T + AIR — Quality-First
+methodology.tab.ai_workflow.pattern.4.tag: Highest Quality
+methodology.tab.ai_workflow.pattern.4.desc: "Human translation as the base, with LC confirming consistency, terminology, and locale rules. For content where MT influence is unacceptable."
+methodology.tab.ai_workflow.pattern.4.case.1: "Medical, legal, or financial content requiring high accuracy"
+methodology.tab.ai_workflow.pattern.4.case.2: Brand-voice-critical content
+methodology.tab.ai_workflow.pattern.4.case.3: Language pairs where MT quality is unreliable
+methodology.tab.mqm_dqf.col.features: How it works
+methodology.tab.mqm_dqf.col.best_for: Best for
+methodology.tab.mqm_dqf.col.severity: Severity Levels
+methodology.tab.mqm_dqf.dimension.accuracy.title: Accuracy
+methodology.tab.mqm_dqf.dimension.accuracy.desc: Mistranslation or omission. Whether source intent is accurately conveyed.
+methodology.tab.mqm_dqf.dimension.terminology.title: Terminology
+methodology.tab.mqm_dqf.dimension.terminology.desc: "Inconsistent terms. Alignment with product glossary and style guide."
+methodology.tab.mqm_dqf.dimension.fluency.title: Fluency
+methodology.tab.mqm_dqf.dimension.fluency.desc: Readability and naturalness in the target language.
+methodology.tab.mqm_dqf.dimension.style.title: Style
+methodology.tab.mqm_dqf.dimension.style.desc: "Tone and voice. Alignment with brand guidelines."
+methodology.tab.mqm_dqf.dimension.design.title: Design
+methodology.tab.mqm_dqf.dimension.design.desc: "Layout issues. Impact of string length on UI elements."
+methodology.tab.mqm_dqf.dimension.locale.title: Locale conv.
+methodology.tab.mqm_dqf.dimension.locale.desc: "Date, currency, units — locale-specific formatting conventions."
+methodology.tab.mqm_dqf.severity.neutral: Neutral — No impact
+methodology.tab.mqm_dqf.severity.minor: Minor — Low UX impact
+methodology.tab.mqm_dqf.severity.major: Major — Comprehension risk
+methodology.tab.mqm_dqf.severity.critical: Critical — Brand / legal risk
+methodology.tab.mqm_dqf.example.title: "Example: Fuzzy Match Bug — RCA Process"
+methodology.tab.mqm_dqf.example.identify: '"surveys" mistranslated repeatedly → recurring error = structural issue'
+methodology.tab.mqm_dqf.example.investigate: 'TB has "survey = questionnaire" but Fuzzy match is OFF — plural forms not matching → Tools issue'
+methodology.tab.mqm_dqf.example.fix: "Enabled Fuzzy match; configured TB to catch survey / surveys / surveying"
+methodology.tab.mqm_dqf.example.monitor: Track next project to confirm the error does not recur
+methodology.tab.ai_delegation.col.how_to_decide: How to Decide
+methodology.tab.ai_delegation.ai.heading: Delegate to AI
+methodology.tab.ai_delegation.ai.subheading: Speed · Coverage · Consistency
+methodology.tab.ai_delegation.ai.item.1: Scan all segments without fatigue
+methodology.tab.ai_delegation.ai.item.2: "Detect terminology, consistency, and locale issues"
+methodology.tab.ai_delegation.ai.item.3: Prioritize errors by severity
+methodology.tab.ai_delegation.ai.item.4: High-speed MT output for large volumes
+methodology.tab.ai_delegation.human.heading: Keep with Humans
+methodology.tab.ai_delegation.human.subheading: Judgment · Context · Brand
+methodology.tab.ai_delegation.human.item.1: Judging nuance and brand voice
+methodology.tab.ai_delegation.human.item.2: Cultural appropriateness and context
+methodology.tab.ai_delegation.human.item.3: Final review and correction of AI flags
+methodology.tab.ai_delegation.human.item.4: Style guide and glossary decisions
+methodology.tab.ai_delegation.decision.cond.1: Strong TM exists
+methodology.tab.ai_delegation.decision.pill.1: → More AI
+methodology.tab.ai_delegation.decision.cond.2: High quality standards
+methodology.tab.ai_delegation.decision.pill.2: → More Human
+methodology.tab.ai_delegation.decision.cond.3: Speed or cost priority
+methodology.tab.ai_delegation.decision.pill.3: → More AI
+methodology.tab.ai_delegation.decision.rec.1: Pattern 1 or 2
+methodology.tab.ai_delegation.decision.rec.2: Pattern 3 or 4
+methodology.tab.ai_delegation.decision.rec.3: Pattern 2 recommended
+contact.heading: |
+  Let's Build
+  Something Together
+contact.cta: Contact Form ↗
+contact.footnote: Available for remote freelance · Kobe

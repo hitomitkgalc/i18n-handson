@@ -1,0 +1,132 @@
+# English strings — split from strings.yaml
+# Source: hitomitkgalc.github.io portfolio
+nav.link.about: About
+nav.link.expertise: Expertise
+nav.link.cases: Cases
+nav.link.methodology: Methodology
+nav.link.contact: Contact
+nav.cta: "お問い合わせ"
+hero.body: HubSpot Japanで営業・CSの経験を持つUIローカリゼーションスペシャリストとして、文化と市場の知見をビジネス成果に変換。—CVR+51%・収益5%成長など実績を積み上げながら、言語×UX×ビジネスを統合し、日本市場への橋をかけます。
+hero.cta: 実績を見る→
+expertise.heading: Expertise
+expertise.heading.full: |
+  ３つの専門領域
+expertise.card.saas.title: SaaS UI/UXローカリゼーション
+expertise.card.saas.body: UI文字列翻訳、用語管理、アプリ内QAテストまで。文字数・コンテキスト・ユーザーフローを考慮した、製品品質に直結する日本語ローカリゼーション。
+expertise.card.transcreation.title: マーケティング翻訳・トランスクリエーション
+expertise.card.transcreation.body: 日本語ユーザーに響くブランドボイスとマーケティングコピーを、文化的深度と検索の可視性も意識して適応。タグラインのトランスクリエーションからSEO/AEO最適化したメタコンテンツまで、日本人の検索行動とユーザー心理に根ざした翻訳を提供。
+expertise.card.lqa.title: AIを活用したローカリゼーションワークフロー
+expertise.card.lqa.body: LLMプロンプトとQA自動化を活用した、効率的なローカリゼーションワークフローを構築。スタイルガイドで学習させた機械翻訳アウトプットから構造化されたエラー分類まで―ニュアンスを損なうことなく、人手による修正負荷を軽減。
+cases.heading: 数字で示す貢献
+cases.nav.label: Case studies
+cases.detail.expand: 詳細↓
+cases.detail.collapse: 閉じる ↑
+cases.metric.cvr_free: |
+  無料→有料プラン
+  転換率
+cases.metric.cvr_signup: サインアップCVR
+cases.metric.revenue: |
+  収益向上
+  （消耗品カテゴリ）
+cases.metric.error_rate: |
+  エラー率
+  （EU比30〜40%）
+cases.insight.sales: Sales × CS insight
+cases.insight.cultural: Cultural insight
+cases.hubspot.company: HubSpot Japan
+cases.hubspot.period: Aug 2024 – Present
+cases.hubspot.tag: Localization × UX Researchローカリゼーション
+cases.hubspot.title: "SignUp CVR +51%改善：ローカリゼーション主導のA/Bテスト"
+cases.hubspot.detail: "日本語ユーザーのサインアップCVR（16%）が英語（25%）を大幅に下回る問題をローカリゼーション観点から分析。電話番号・URL入力の「任意」表示改善と、入力目的を説明するオーバーレイ等を提案。North Star指標（Free→Starter有料プラン転換）が51%改善（有意）。さらに「任意化による営業データ欠損リスク」の副作用の可能性も指摘し、ローカリゼーションと営業・CSの両知見を持つからこそ見えた構造的トレードオフとして、コンテンツデザインチームに提言。"
+cases.amazon.company: Amazon Japan
+cases.amazon.period: Feb 2021 – May 2023
+cases.amazon.tag: Localization × ML Training Data
+cases.amazon.title: "150%納品速度改善・5%売上増：Amazon Japan カタログ機械学習モデルのローカリゼーション"
+cases.amazon.detail: "ATRIAプロジェクト：AIカタログ分類機械学習モデルを日本市場向けにローカライズ。英語圏の「代替性ベース分類」が日本食文化や生活文化に適用できない事例を全カテゴリで検証。EUデータサイエンティストに日本固有の分類基準をフィードバックし、機械学習のデータ分類品質を向上。EU市場30〜40%のエラー率を大幅に下回る15%までの削減を達成。Q3 2022 Amazon ADS Most Valuable Contribution受賞。"
+methodology.label: Methodology
+methodology.heading: |
+  AI × Human ローカリゼーション
+  品質フレームワーク
+methodology.sub: 単なる翻訳だけでなく、品質をどう設計・担保するかが私の強みです。プロジェクト条件に応じたワークフロー設計とQA基準の整備を支援します。
+methodology.tab.ai_workflow.label: AIワークフロー 4パターン
+methodology.tab.mqm_dqf.label: MQM-DQF品質フレームワーク
+methodology.tab.ai_delegation.label: AIへのタスク委任
+methodology.process.mt: 機械翻訳
+methodology.process.ai_review: AIレビュー
+methodology.process.post_edit: 人による校正
+methodology.process.human_trans: 人による翻訳
+methodology.tab.ai_workflow.pattern.1.title: CAT + MT + AIR + PE — バランス型
+methodology.tab.ai_workflow.pattern.1.tag: バランス重視
+methodology.tab.ai_workflow.pattern.1.desc: "TMのマッチ率が高いセグメントはCATで処理し、残りを機械翻訳+AIレビューに流す。TM資産を最大活用しながらコスト・品質・スピードをバランスよく確保。"
+methodology.tab.ai_workflow.pattern.1.case.1: 翻訳メモリ（TM）が充実している
+methodology.tab.ai_workflow.pattern.1.case.2: 継続的なプロジェクト・反復コンテンツ
+methodology.tab.ai_workflow.pattern.1.case.3: "コスト・品質・スピードをバランスよく求める"
+methodology.tab.ai_workflow.pattern.2.title: MT + AIR + PE — 速度優先型
+methodology.tab.ai_workflow.pattern.2.tag: スピード重視
+methodology.tab.ai_workflow.pattern.2.desc: "TM省略により高速化。機械翻訳+AIレビューでエラーを事前スキャンし、人間はフラグ箇所のみ集中。人手による校正の工数を最小化する。"
+methodology.tab.ai_workflow.pattern.2.case.1: TMが少ない・新規プロジェクト
+methodology.tab.ai_workflow.pattern.2.case.2: 短納期・大量コンテンツ
+methodology.tab.ai_workflow.pattern.2.case.3: "マーケティングコンテンツ、ブログ記事"
+methodology.tab.ai_workflow.pattern.3.title: MT + PE + AIR — セーフティネット
+methodology.tab.ai_workflow.pattern.3.tag: 品質保証
+methodology.tab.ai_workflow.pattern.3.desc: 機械翻訳→人による校正の後にAIが「最終の目」として機能。疲労・見落としによるエラーをAIが検知し、品質を担保する。
+methodology.tab.ai_workflow.pattern.3.case.1: 人間が主だが最終確認をAIに任せたい
+methodology.tab.ai_workflow.pattern.3.case.2: 長文・反復作業で疲労が蓄積しやすい案件
+methodology.tab.ai_workflow.pattern.3.case.3: "UI文字列・\n製品ドキュメント"
+methodology.tab.ai_workflow.pattern.4.title: T + AIR — 品質最重視型
+methodology.tab.ai_workflow.pattern.4.tag: 最高品質
+methodology.tab.ai_workflow.pattern.4.desc: "機械翻訳を使わず人による一次翻訳を基本とし、LCが一貫性・用語・形式エラーを最終確認。機械翻訳ミスの影響を避けたいコンテンツに。"
+methodology.tab.ai_workflow.pattern.4.case.1: "医療・法律・金融など高精度な翻訳が必要"
+methodology.tab.ai_workflow.pattern.4.case.2: ブランドボイスが重要なコンテンツ
+methodology.tab.ai_workflow.pattern.4.case.3: 機械翻訳の品質が信頼できない言語ペア
+methodology.tab.mqm_dqf.col.features: 特徴
+methodology.tab.mqm_dqf.col.best_for: 向いているケース
+methodology.tab.mqm_dqf.col.severity: 重大性レベル
+methodology.tab.mqm_dqf.dimension.accuracy.title: Accuracy
+methodology.tab.mqm_dqf.dimension.accuracy.desc: 誤訳・欠落。原文の意図が正確に伝わっているか。
+methodology.tab.mqm_dqf.dimension.terminology.title: Terminology
+methodology.tab.mqm_dqf.dimension.terminology.desc: "用語の不一致。製品用語集・スタイルガイドとの整合性。"
+methodology.tab.mqm_dqf.dimension.fluency.title: Fluency
+methodology.tab.mqm_dqf.dimension.fluency.desc: 読みやすさ・自然さ。ターゲット言語としての流暢性。
+methodology.tab.mqm_dqf.dimension.style.title: Style
+methodology.tab.mqm_dqf.dimension.style.desc: "文体・トーン。ブランドボイスやトンマナとの一致。"
+methodology.tab.mqm_dqf.dimension.design.title: Design
+methodology.tab.mqm_dqf.dimension.design.desc: "レイアウト崩れ。文字列の長さ・改行・UI要素への影響。"
+methodology.tab.mqm_dqf.dimension.locale.title: Locale conv.
+methodology.tab.mqm_dqf.dimension.locale.desc: "日付・通貨・単位など、国・地域固有の表記規則。"
+methodology.tab.mqm_dqf.severity.neutral: Neutral — 影響なし・好みの問題
+methodology.tab.mqm_dqf.severity.minor: Minor — UX影響小
+methodology.tab.mqm_dqf.severity.major: Major — 誤解リスク・機能影響あり
+methodology.tab.mqm_dqf.severity.critical: Critical — ブランド損傷／法的リスク
+methodology.tab.mqm_dqf.example.title: "実例：Fuzzy matchバグの分析プロセス"
+methodology.tab.mqm_dqf.example.identify: '「surveys（アンケート）」が毎回正しく訳されない → 繰り返しエラー = 構造的問題'
+methodology.tab.mqm_dqf.example.investigate: '用語集に「survey = アンケート」はあるが、Fuzzy match機能がOFFのため複数形でヒットしない → ツールの問題'
+methodology.tab.mqm_dqf.example.fix: "Fuzzy matchをONにし、survey / surveys / surveying すべて用語データベースでヒットするよう設定変更"
+methodology.tab.mqm_dqf.example.monitor: 次プロジェクトで同エラーが出ないかトラッキング
+methodology.tab.ai_delegation.col.how_to_decide: 判断のポイント
+methodology.tab.ai_delegation.ai.heading: AIに任せること
+methodology.tab.ai_delegation.ai.subheading: 処理速度・網羅性・一貫性
+methodology.tab.ai_delegation.ai.item.1: 全セグメントをスキャンして見落としを防ぐ
+methodology.tab.ai_delegation.ai.item.2: "用語・一貫性・形式エラーの抽出"
+methodology.tab.ai_delegation.ai.item.3: エラー箇所の優先順位付け（重大性の分類）
+methodology.tab.ai_delegation.ai.item.4: 大量コンテンツの機械翻訳での高速出力
+methodology.tab.ai_delegation.human.heading: 人間が担うこと
+methodology.tab.ai_delegation.human.subheading: 判断・文脈・ブランド定義
+methodology.tab.ai_delegation.human.item.1: ニュアンス・ブランドボイスの適否
+methodology.tab.ai_delegation.human.item.2: 文化的適切さ・文脈の解釈
+methodology.tab.ai_delegation.human.item.3: AIフラグの最終確認と修正
+methodology.tab.ai_delegation.human.item.4: スタイルガイド・用語集の意思決定
+methodology.tab.ai_delegation.decision.cond.1: 用語集の充実度が高い
+methodology.tab.ai_delegation.decision.pill.1: '→ AI委譲↑'
+methodology.tab.ai_delegation.decision.cond.2: 品質基準が厳しい
+methodology.tab.ai_delegation.decision.pill.2: '→ Human比率↑'
+methodology.tab.ai_delegation.decision.cond.3: 納期・コスト優先
+methodology.tab.ai_delegation.decision.pill.3: '→ AI委譲↑'
+methodology.tab.ai_delegation.decision.rec.1: パターン1 または 2
+methodology.tab.ai_delegation.decision.rec.2: パターン3 または 4
+methodology.tab.ai_delegation.decision.rec.3: パターン2が最適
+contact.heading: |
+  お気軽に
+  ご相談ください
+contact.cta: お問い合わせフォーム ↗
+contact.footnote: 副業・フリーランス案件受付中 · Kobe
